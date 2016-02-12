@@ -3,7 +3,7 @@
 A plugin for Shaarli (community fork) who add a "Go to top" button
 
 ### Installation/configuration
-Clone this repository inside your `tpl/plugins/` directory, or download the archive and unpack it there.  
+Clone this repository inside your `plugins/` directory, or download the archive and unpack it there.  
 The directory structure should look like:
 
 ```
@@ -18,9 +18,9 @@ The directory structure should look like:
             └── top.php
 ```
 
-To enable the plugin, add `'gototop'` to your list of enabled plugins in `data/options.php` (`PLUGINS` array)
+To enable the plugin, add `'gototop'` to your list of enabled plugins in `data/config.php` (`PLUGINS` parameter)
 . This should look like:
 
 ```
-$GLOBALS['config']['PLUGINS'] = array('qrcode', 'any_other_plugin', 'gototop')
+$GLOBALS['config']['PLUGINS'] = ('gototop');
 ```
